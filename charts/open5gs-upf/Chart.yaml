@@ -10,7 +10,7 @@ maintainers:
 - email: stephane.grannec@orange.com
   name: sgrannec
 name: open5gs-upf
-version: 2.2.6
+version: 2.2.7
 annotations:
   artifacthub.io/category: networking
 keywords:
