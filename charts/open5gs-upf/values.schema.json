@@ -52,6 +52,14 @@
                 "upf": {
                     "type": "object",
                     "properties": {
+                        "pfcp": {
+                            "type": "object",
+                            "properties": {
+                                "dev": {
+                                    "type": "string"
+                                }
+                            }
+                        },
                         "gtpu": {
                             "type": "object",
                             "properties": {
