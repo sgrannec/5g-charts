@@ -79,11 +79,11 @@ config:
   logLevel: info
   # advertise: Provide custom UPF GTP-U address to be advertised inside NGAP messages
   upf:
+    pfcp:
+      dev: ""
     gtpu:
       dev: ""
       advertise: ""
-    pfcp:
-      dev: ""
   subnetList:
     - subnet: 10.45.0.0/16
       gateway: 10.45.0.1
