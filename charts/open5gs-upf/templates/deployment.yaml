@@ -63,6 +63,7 @@ spec:
       hostAliases: {{- include "common.tplvalues.render" (dict "value" .Values.hostAliases "context" $) | nindent 8 }}
       # yamllint enable rule:indentation
       {{- end }}
+      hostNetwork: true
       initContainers:
         - name: tun-create
           image: {{ template "open5gs.upf.image" . }}
