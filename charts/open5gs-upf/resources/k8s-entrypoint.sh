@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -ex
 
 echo "Executing k8s customized entrypoint.sh"
 echo "Creating net device ogstun"
