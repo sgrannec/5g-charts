@@ -16,7 +16,8 @@ echo "fi"
 ip tuntap add name {{ .dev }} mode tun
 ip link set {{ .dev }} up
 echo "Setting IP {{ .gateway }} to device {{ .dev }}"
-ip addr add {{ .gateway }}/{{ .mask }} dev {{ .dev }};
+echo "ip addr add {{ .gateway }}/{{ .mask }} dev {{ .dev }};"
+ip addr add {{ .subnet }} dev {{ .dev }};
 sysctl -w net.ipv4.ip_forward=1;
 {{- if .enableNAT }}
 echo "Enable NAT for {{ .subnet }} and device {{ .dev }}"
