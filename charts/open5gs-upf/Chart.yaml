@@ -1,16 +1,16 @@
 apiVersion: v2
-appVersion: "2.7.2"
+appVersion: "2.7.2a"
 description: >
   Helm chart to deploy Open5gs UPF service on Kubernetes.
-home: https://github.com/gradiant/5g-charts
+home: https://github.com/sgrannec/5g-charts
 sources:
   - http://open5gs.org
 icon: https://open5gs.org/assets/img/open5gs-logo.png
 maintainers:
-- email: cgiraldo@gradiant.org
-  name: cgiraldo
+- email: stephane.grannec@orange.com
+  name: sgrannec
 name: open5gs-upf
-version: 2.2.6
+version: 2.2.7
 annotations:
   artifacthub.io/category: networking
 keywords:
