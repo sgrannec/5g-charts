@@ -45,7 +45,13 @@
                             },
                             "subnet": {
                                 "type": "string"
-                            }
+                            },
+			    "gateway": {
+				"type": "string"
+			    },
+			    "mask": {
+				"type": integer"
+			    }
                         }
                     }
                 },
