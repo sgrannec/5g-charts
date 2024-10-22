@@ -50,7 +50,7 @@
 				"type": "string"
 			    },
 			    "mask": {
-				"type": integer"
+				"type": "integer"
 			    }
                         }
                     }
