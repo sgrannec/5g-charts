@@ -6,10 +6,10 @@ echo "Executing k8s customized entrypoint.sh"
 {{- range .Values.config.subnetList }}
 {{- if .createDev }}
 echo "Creating net device {{ .dev }}"
-if grep "{{ .dev }}" /proc/net/dev > /dev/null; then
-    echo "Warnin: Net device {{ .dev }} already exists! may you need to set createDev: false";
-    exit 1
-fi
+echo "if grep "{{ .dev }}" /proc/net/dev > /dev/null; then"
+echo "    echo "Warnin: Net device {{ .dev }} already exists! may you need to set createDev: false";"
+echo "    exit 1"
+echo "fi"
 
 ip tuntap add name {{ .dev }} mode tun
 ip link set {{ .dev }} up
